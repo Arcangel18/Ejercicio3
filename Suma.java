@@ -1,13 +1,15 @@
 public class Suma {
     public static void main(String[] args) {
         int uno=1, dos=2, tres=3, resultado=0;
-        Sumados(uno,dos ,tres,resultado);
-
+       
+         resultado= Sumados(uno,dos ,tres);
+         System.out.println(resultado);
          
     }
 
-        void Sumados(int uno,int dos, int tres,int resultado){
+        static int Sumados(int uno,int dos, int tres){
 
-             resultado=uno+dos+tres;
-        }
+             return uno+dos+tres;
+     }
 }
+
